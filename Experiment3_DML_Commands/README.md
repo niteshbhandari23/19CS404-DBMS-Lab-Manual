@@ -47,123 +47,147 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1190" height="679" alt="image" src="https://github.com/user-attachments/assets/488fa45a-d1fa-4472-a80d-22f465623dc7" />
 
-```sql
--- Paste your SQL code below for Question 1
+
+```
+update Employees set hire_date='2024-01-24' where department_id=50;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="776" height="309" alt="image" src="https://github.com/user-attachments/assets/9ef633c1-4339-42eb-9f6f-548cb78991fb" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1236" height="632" alt="image" src="https://github.com/user-attachments/assets/ac57c275-bc8e-4419-b5f2-ec7293007950" />
 
-```sql
--- Paste your SQL code below for Question 2
+
+```
+update Employees set salary=salary*2 where job_id like '%MAN';
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1197" height="406" alt="image" src="https://github.com/user-attachments/assets/0c162d27-6618-42da-928e-3bb008b881e6" />
 
 **Question 3**
 ---
--- Paste Question 3 here
 
-```sql
--- Paste your SQL code below for Question 3
+<img width="1248" height="519" alt="image" src="https://github.com/user-attachments/assets/39c98b21-4b2d-4165-ae43-e5728747d72f" />
+
+
+```
+delete from Customer where GRADE%2=1;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1295" height="527" alt="image" src="https://github.com/user-attachments/assets/3663e129-db4d-417a-8bf8-ce9a63868b40" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="1285" height="612" alt="image" src="https://github.com/user-attachments/assets/9ba060e6-b3be-411f-b99e-567ee4e645e2" />
 
-```sql
--- Paste your SQL code below for Question 4
+
+```
+delete from Customer where CUST_NAME like  'Holmes%' or CUST_NAME like '%Holmes' or CUST_NAME LIKE '%holmes%';
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1304" height="656" alt="image" src="https://github.com/user-attachments/assets/621e495e-60c1-4271-a52a-80bd6d7a7114" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="873" height="571" alt="image" src="https://github.com/user-attachments/assets/8f0dd13e-6d98-4aac-b0a2-7bcd995d6184" />
 
-```sql
--- Paste your SQL code below for Question 5
+
+```
+delete from Doctors where last_name IS NULL;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1074" height="725" alt="image" src="https://github.com/user-attachments/assets/d89384d7-8d59-45f5-869f-53f61e7f6879" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1280" height="376" alt="image" src="https://github.com/user-attachments/assets/6e4f16bb-420f-448d-8cb7-f356f4564e25" />
 
-```sql
--- Paste your SQL code below for Question 6
+
+```
+delete from customer where AGENT_CODE ='A003' OR AGENT_CODE='A008';
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="959" height="760" alt="image" src="https://github.com/user-attachments/assets/172ebea6-2199-4af6-b312-2bc978634afc" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1205" height="631" alt="image" src="https://github.com/user-attachments/assets/ce779a55-2306-4dd6-bd6a-e7426ddd3675" />
 
-```sql
--- Paste your SQL code below for Question 7
+
+```
+select * from salesman where name like 'N__l%';
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1160" height="418" alt="image" src="https://github.com/user-attachments/assets/32410683-519c-45a4-b874-20d3c9727070" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1136" height="560" alt="image" src="https://github.com/user-attachments/assets/11fc86bc-b433-4080-a007-e81899acf339" />
 
-```sql
--- Paste your SQL code below for Question 8
+
+```
+select * from emp where ename like '__R_%';
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1277" height="465" alt="image" src="https://github.com/user-attachments/assets/b117226f-f027-416d-b3f1-d2400f6254a6" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1001" height="701" alt="image" src="https://github.com/user-attachments/assets/dd1d5ffb-3b0e-45d9-b34d-430dcd3a5c9b" />
 
-```sql
--- Paste your SQL code below for Question 9
+```
+INSERT INTO Customers (ID, NAME, AGE, ADDRESS, SALARY)
+VALUES
+(1, 'Ramesh', 32, 'Ahmedabad', 2000),
+(2, 'Khilan', 25, 'Delhi', 1500),
+(3, 'Kaushik', 23, 'Kota', 2000);
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1255" height="395" alt="image" src="https://github.com/user-attachments/assets/1995e776-141a-44ea-b6d1-0d1a808bbde1" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="863" height="379" alt="image" src="https://github.com/user-attachments/assets/590798ec-3662-44cb-83e9-d00748dab262" />
 
-```sql
--- Paste your SQL code below for Question 10
+
+```
+INSERT INTO Employee (EmployeeID, Name, Department, Salary)
+SELECT EmployeeID, Name, Department, Salary
+FROM Former_employees;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="980" height="282" alt="image" src="https://github.com/user-attachments/assets/527e1263-5dc3-4ffc-8074-ef0953423ca7" />
+
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
