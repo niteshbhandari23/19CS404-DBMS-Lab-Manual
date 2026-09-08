@@ -105,123 +105,170 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1272" height="476" alt="image" src="https://github.com/user-attachments/assets/7471e97d-294f-4544-a2aa-014e71081784" />
 
-```sql
--- Paste your SQL code below for Question 1
+
+```
+CREATE TABLE item (
+    item_id TEXT PRIMARY KEY,
+    item_desc TEXT NOT NULL,
+    rate INTEGER NOT NULL,
+    icom_id TEXT ,
+    FOREIGN KEY (icom_id)
+        REFERENCES company(com_id)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="994" height="333" alt="image" src="https://github.com/user-attachments/assets/0aeec616-96a4-4be9-9232-ac2cb3d27920" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1232" height="432" alt="image" src="https://github.com/user-attachments/assets/bd26ba36-7d0f-42f3-a50d-01ebf3c0f87b" />
 
-```sql
--- Paste your SQL code below for Question 2
+
+```
+CREATE TABLE Products (
+    ProductID INTEGER PRIMARY KEY,
+    ProductName TEXT NOT NULL UNIQUE,
+    Price REAL CHECK (Price > 0),
+    StockQuantity INTEGER CHECK (StockQuantity >= 0)
+);
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1248" height="357" alt="image" src="https://github.com/user-attachments/assets/135ee2a3-5902-432e-a694-67981760c38c" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1074" height="338" alt="image" src="https://github.com/user-attachments/assets/1f0f6443-ba41-4c32-89a7-a9d22824ecfe" />
 
-```sql
--- Paste your SQL code below for Question 3
+
+```
+ALTER TABLE employee ADD COLUMN designation varchar(50);
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1257" height="371" alt="image" src="https://github.com/user-attachments/assets/2eae33b0-04ed-4701-823f-f39398ddb47f" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="999" height="414" alt="image" src="https://github.com/user-attachments/assets/64b3cddd-bb65-443d-90c9-5720cea6cd24" />
 
-```sql
--- Paste your SQL code below for Question 4
+
+```
+<img width="999" height="414" alt="image" src="https://github.com/user-attachments/assets/afec1327-b64c-4887-bbe5-dbc9ed7062d6" />
+
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1253" height="465" alt="image" src="https://github.com/user-attachments/assets/2a7e60f4-d9a1-4933-a169-ffd79a737f0c" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1191" height="268" alt="image" src="https://github.com/user-attachments/assets/19925096-e79b-429f-9bef-fce20316c556" />
 
-```sql
--- Paste your SQL code below for Question 5
+
+```
+INSERT INTO Employee (EmployeeID, Name, Position, Department, Salary) VALUES (001, 'Sarah Parker', 'Manager', 'HR', 60000);
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1248" height="275" alt="image" src="https://github.com/user-attachments/assets/ec771cc6-56f1-4429-8e9d-6a88ebb99a03" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
 
-```sql
--- Paste your SQL code below for Question 6
+<img width="1231" height="394" alt="image" src="https://github.com/user-attachments/assets/9a2d9333-9842-4bba-8fb6-86ec51c745d5" />
+
+
+```
+<img width="1231" height="394" alt="image" src="https://github.com/user-attachments/assets/215d1eeb-d3b9-452f-a30e-2ffb0f17f884" />
+
+
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="776" height="286" alt="image" src="https://github.com/user-attachments/assets/7fe3acb0-b0c9-47c6-9a5b-d6fb8d859f7a" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1232" height="386" alt="image" src="https://github.com/user-attachments/assets/b7003999-f2c1-467c-9dd8-b2b8c658ceae" />
 
-```sql
--- Paste your SQL code below for Question 7
+
+```
+CREATE TABLE Department (
+    DepartmentID INTEGER PRIMARY KEY,
+    DepartmentName TEXT NOT NULL UNIQUE,
+    Location TEXT
+);
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1179" height="242" alt="image" src="https://github.com/user-attachments/assets/3924c281-6aa4-4de4-a9ed-fed4051d6374" />
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1218" height="621" alt="image" src="https://github.com/user-attachments/assets/f121caeb-77b0-4b6f-be78-9ad61a735366" />
 
-```sql
--- Paste your SQL code below for Question 8
+
+```
+ALTER TABLE customer
+ADD COLUMN discount DECIMAL(5,2);
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1246" height="454" alt="image" src="https://github.com/user-attachments/assets/9f10fb1c-90dd-403c-a820-66ada758d991" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="2457" height="486" alt="image" src="https://github.com/user-attachments/assets/725a01a9-8919-4a9d-ba2e-e3a33a933e3c" />
 
-```sql
--- Paste your SQL code below for Question 9
+
+```
+CREATE TABLE orders (ord_id TEXT LENGTH check(length(ord_id)=4) NOT NULL,item_id TEXT NOT NULL ,ord_date DATE ,ord_qty INTEGER,cost INTEGER, PRIMARY KEY(item_id , ord_date));
+
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="2394" height="621" alt="image" src="https://github.com/user-attachments/assets/3e52be56-6379-43ec-a16b-f90fa2260c05" />
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="2448" height="381" alt="image" src="https://github.com/user-attachments/assets/43a6c073-b131-4122-9d35-3b849fb22ed2" />
 
-```sql
--- Paste your SQL code below for Question 10
+
+```
+CREATE table Invoices(InvoiceID INT,InvoiceDate DATE,Amount REAL check(Amount>0),DueDate DATE check(DueDate>InvoiceDate),OrderID INT, foreign key (OrderID) REFERENCES Orders(OrderID));
+
 ```
 
 **Output:**
+<img width="2406" height="534" alt="image" src="https://github.com/user-attachments/assets/8aa5f5f3-a989-4d44-8d10-6516435080ba" />
 
-![Output10](output.png)
+
+### MARKS
+<img width="1516" height="385" alt="image" src="https://github.com/user-attachments/assets/a8d80845-f516-4cea-b93d-8b3bf0cb09e8" />
+
 
 
 ## RESULT
